@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>Larp Watches - Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #0047AB;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .header .logo span {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .header .nav {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .header .nav a:hover {
+            text-decoration: underline;
+        }
+        .header .nav i {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .cart-table th, .cart-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-table th {
+            background-color: #f1f1f1;
+        }
+        .cart-summary {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .cart-summary p {
+            margin: 5px 0;
+        }
+        .cart-summary .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .checkout-button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            background-color: #0047AB;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+        .checkout-button:hover {
+            background-color: #b38e14;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            
+            <span>Larp Watches</span>
+        </div>
+        <div class="nav">
+            <a href="index.php">Home</a>
+            <a href="product.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.php"><i class="fas fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rolex</td>
+                    <td>$999.99</td>
+                    <td>1</td>
+                    <td>$999.99</td>
+                </tr>
+                <tr>
+                    <td>Timex</td>
+                    <td>$599.99</td>
+                    <td>1</td>
+                    <td>$599.99</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <p>Subtotal: $1599.98</p>
+            <p>Interest (2%): $32.00</p>
+            <p class="total">Total: $1631.98</p>
+        </div>
+        <a href="#" class="checkout-button">Proceed to Checkout</a>
+    </div>
+</body>
+</html>
